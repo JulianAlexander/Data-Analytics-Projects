@@ -197,9 +197,11 @@ JOIN payment USING (rental_id)
 GROUP BY category.name ORDER BY sum(payment.amount) DESC LIMIT 5;
 ```
 -- 8b. How would you display the view that you created in 8a?
-```SELECT * FROM top_gross_genres;
+```
+SELECT * FROM top_gross_genres;
 ```
 -- 8c. You find that you no longer need the view top_five_genres. Write a query to delete it.
+```
 use sakila;
-```DROP VIEW top_gross_genres;
+DROP VIEW top_gross_genres;
 ```
