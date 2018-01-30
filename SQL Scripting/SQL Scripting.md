@@ -1,3 +1,5 @@
+The following is a list of prompts and queries using the sakila DB with MySQL Workbench:
+
 -- 1a. Display the first and last names of all actors from the table actor.
 ```use sakila; -- using sakila DB
 SELECT * FROM actor; -- looking through the actor table to see column names
