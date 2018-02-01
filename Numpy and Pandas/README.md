@@ -1,3 +1,4 @@
+The following is an analysis of an online game based on it's associated customer data, gender, demographics, and purchase information.
 
 # Heroes of Pymoli - Data Crunching
 
