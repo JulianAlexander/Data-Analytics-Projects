@@ -2,4 +2,4 @@ Twitter has become a wildly sprawling jungle of information—140 characters at 
 
 The following folder includes my created Python script designed to perform a sentiment analysis of the Twitter activity of various news oulets, and to present those findings visually.
 
-The sentiments are displayed as a visualized summary of the sentiments expressed in Tweets sent out by the following news organizations: BBC, CBS, CNN, Fox, and New York times.
+The information is displayed as a visualized summary of the sentiments expressed in Tweets sent out by the following news organizations: BBC, CBS, CNN, Fox, and New York times.
