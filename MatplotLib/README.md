@@ -1,4 +1,4 @@
-
+Creating a variety of plots using the MatPlotLib python library along with artificially generated ridesharing data.
 
 ```python
 import pandas as pd
