@@ -1,0 +1,1 @@
+This analysis uses data from the Census API (Business Dynamics Statistics) to take a look at job creation and destruction information by State, inudstry, and business age to accurately visualize the US job market over a ten year span (2005-2014).
