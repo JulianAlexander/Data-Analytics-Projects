@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- /*<meta name="viewport" http-equiv="refresh" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  .header{
+    margin-right: 25px; 
+    padding:50px;
+  }
+  .title{
+    font-weight:bold;
+    color:teal;
+  }
+  .container-fluid{
+    padding-top:50px;
+    padding-right:50px;
+    margin-right:50px;
+    margin-left:50px;
+    width:100%;
+    position:relative;
+    height:auto;
+  }
+
+  .box-1{
+    background:white;
+  }
+  div.a {
+    align-items: stretch;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 500px;
+  }
+
+      </style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">Latitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <ul class="navbar-nav navbar-item">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="longlat.html">Longitude vs. Latitude</a>
+        <a class="dropdown-item" href="humidity.html">Humidity</a>
+        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+        <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+      </div>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="comparisons.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html">Data</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+<body style="background-color:lightgrey" class="full-width">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-7 header box-1">
+    <h1 class="title">Wind Speed</h1>
+    <div class="container-fluid text-center">  
+    <a href="windspeed.html"><img src="https://i.imgur.com/Pfm3A8C.png" title="source: imgur.com"/> </a>
+     
+     <p>The above plot shows the measured wind speed in the cities used for this analysis against their Latitude. The range of wind speed seems to be mostly under 30 mph for the majority of cities. There are, of course, a few cities with wind speeds that exceed this, but generally, most cities experience speeds well below 30 mph, closer to 0-10 mph. There also appears to be a trend occuring, where cities closer to either end of the Latitude spectrum (North or South) experience higher wind speeds than cities closer to the equator. </p>
+    </div>
+    </div>
+    <div class="container-fluid col-md-3 header box-1 a">
+        <h2 class="title">Visualizations</h2>
+        <div class="row">
+          <div class="col-md-6 text-center"><a href="longlat.html"><img class='img-thumbnail' src="https://i.imgur.com/Pc8UxQA.png" title="source: imgur.com" /></a></div>
+          <div class="col-md-6 text-center"><a href="cloudiness.html"><img class='img-thumbnail' src="https://i.imgur.com/Albo6xl.png" title="source: imgur.com" /></a></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-center"><a href="maxtemp.html"><img class='img-thumbnail' src="https://i.imgur.com/kgyZPLG.png" title="source: imgur.com" /></a></div>
+          <div class="col-md-6 text-center"><a href="humidity.html"><img class='img-thumbnail' src="https://i.imgur.com/luUFarK.png" title="source: imgur.com" /></a></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+      </body>
