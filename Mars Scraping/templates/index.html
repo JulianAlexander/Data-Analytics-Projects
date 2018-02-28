@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MARS: The final frontier</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+#mars_current_weather {
+  border-style: solid;
+  border-width: 1px
+}
+container {
+  border-style: solid;
+  border-width: 1px;
+}
+.right{
+  float: absolute;
+  width: 350px;
+  padding: 0px; 
+}
+table{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 390px;
+}
+</style>
+<body style="background-color:lightgrey">
+ {% for elements in scraper %}
+  <div class="container" style="background-color:lightgrey">
+    <div class="jumbotron text-center">
+      <h1>MISSION TO MARS</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <!-- Mars Data -->
+    <div class="row" id="mars_news">
+      <div class="col-md-12">
+        <h2 class="heading"><strong>Latest Mars News</strong></h2>
+        <h3 class="heading"><strong>{{ elements.title }}</strong> </h3>
+        <h4 class ="heading">{{ elements.paragraph }}</h4>
+        {% endfor %}
+      </div>
+    </div>
+    {% for elements in scraper %}
+    <h2 class="heading"><strong>Featured Mars Image</strong></h2>
+    <div class="container">
+      <div class="row" id="feat_image">
+          <div class="col-md-8 text-center"><img class="image-responsive" style="width:100%" src="{{elements.featured_image}}"/></div>
+          
+          <div class="col-md-4" id="mars_current_weather"><h4 style="padding:0px"><strong>Current Weather on Mars</strong><p style="margin:5px">{{ elements.weather }}</p></h4></div>
+          <div class="col-md-4 right table" id="mars_facts_table"><h4><strong>Mars Facts</strong></h4>{{ elements.table |safe }}</div>
+      
+      <div class="row" id="mars_facts">
+        <div class="col-md-8"></div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="heading text-center"><strong>Mars Hemispheres</strong></h2> 
+      <div class="row" id="mars_hemis">
+        {% for dict in hemi_urls %}
+        <div class="col-md-6"><img class="image-responsive" style="width:100%" src = "{{dict[0].img_url}}"/></div>
+        <div class="col-md-6"><img class='image-responsive' style = "width:100%" src = "{{dict[1].img_url}}"/></div>
+      </div>
+      </div>
+        <div class="container">
+        <div class="row">
+        <div class="col-md-6"><h3 class="heading"><strong>{{dict[0].title}}</strong></h3></div>
+        <div class="col-md-6"><h3 class="heading"><strong>{{dict[1].title}}</strong></h3>
+          </div>
+      </div>  
+    </div>
+    <div class="container">
+        <div class="row" id="mars_hemis">
+          <div class="col-md-6"><img class="image-responsive" style="width:100%" src = "{{dict[2].img_url}}"/></div>
+          <div class="col-md-6"><img class='image-responsive' style = "width:100%" src = "{{dict[3].img_url}}"/></div>
+        </div>
+        </div>
+          <div class="container">
+          <div class="row">
+          <div class="col-md-6"><h3 class="heading"><strong>{{dict[2].title}}</strong></h3></div>
+          <div class="col-md-6"><h3 class="heading"><strong>{{dict[3].title}}</strong></h3>
+            </div>
+        </div>  
+      </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</body>
+</html>
