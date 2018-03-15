@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belly Button Biodiversity</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<style>
+    #plots{
+        display: inline-block;
+        height: auto;
+        position: relative;
+    }
+    #smTitle {
+        margin-top:25px;
+        border:2px;
+        border-radius:4px;
+        background-color:darkblue;
+        color:aliceblue;
+        text-align: center;
+    }
+    .svg-container {
+        height:500px;
+    }
+    #dropdown{
+        margin-left:0px;
+    }
+    #list{
+        background-color: aliceblue;
+        color:black;
+        text-align: left;
+    }
+    #header {
+        text-align:center;
+    }
+</style>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" id="header">
+            <h1 class='display-3'>Belly Button Biodiversity</h1>
+            <p class='lead'>Choose a sample from the dropdown to see a visual breakdown of the data!</p>
+        </div>
+
+    </div>
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-3" id="dropdown">
+                <p class='lead'>Select a Sample</p>
+                <select id="samples" onchange="optionChanged(); findMetadata(); createBubble()"></select>
+        </div>
+            </div>
+    </div>
+    
+    
+    <div class = 'container'>
+        <div class="row">
+            <div class='col-md-3' id="sampleMetadata">
+                <div class="card" style:"width: 18rem" id="smTitle"><p class="lead"><strong>Sample MetaData</p></strong>
+                    <div id="list"><ul class="card-text" id="metadataList"></ul></div>
+                </div>
+            </div>
+        <div class='col-md-9'>
+            <div class = "responsive-plot" id='plots'></div>
+        </div>
+    </div>
+</div>
+    
+    <div class='container-fluid text-center' id='bubblePlot'></div>
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}" type="text/javascript"></script>
+
+<!--     <select id="selDataset" onchange="getData(this.value)">
+        <option value="emoji_char">Emoji Char</option>
+        <option value="emoji_id">Emoji ID</option>
+        <option value="emoji_name">Emoji Name</option>
+    </select> -->
+</body>
+</html>
