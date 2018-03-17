@@ -1,8 +1,8 @@
-#Belly Button Biodiversity Web App:
+# Belly Button Biodiversity Web App:
 
 Using Python, SQLAlchemy, JavaScript, and Flask, I've built an interactive web app which explores the Belly Button Biodiversity Dataset: http://robdunnlab.com/projects/belly-button-biodiversity/
 
-##Step 1: Flask API
+## Step 1: Flask API
 Using Flask, I've designed an API for the Belly Button dataset and to serve the HTML and JavaScript required for the dashboard page. The Flask app references a sqlite database file created using Python and SQLAlchemy, and also reads the CSV data directly into a Pandas DataFrame. The data is output as JSON in each of the routes in the flask_app file.
 
 The dashboard landing page uses a template created with bootstrap in index.html. 
@@ -64,14 +64,7 @@ Below are the Flask API routes:
     Returns an integer value for the weekly washing frequency `WFREQ`
     """
 @app.route('/samples/<sample>')
-    """OTU IDs and Sample Values for a given sample.
-
-    Sort your Pandas DataFrame (OTU ID and Sample Value)
-    in Descending Order by Sample Value
-
-    Return a list of dictionaries containing sorted lists  for `otu_ids`
-    and `sample_values`
-
+    """OTU IDs and Sample Values for a given sample
     [
         {
             otu_ids: [
@@ -91,7 +84,7 @@ Below are the Flask API routes:
     """
 ```
 
-#Step 2: Use Plotly.js to build webpage
+# Step 2: Use Plotly.js to build webpage
 
 Using Plotly, we create the interactive charts that will populate the home page dashboard.
 I created a function, optionChanged(), which fetches all of the sample names and adds them to a dropdown list (this is achieved using Plotly.d3.json). Every time a sample is chosen, the data is fetched from the Flask API.
