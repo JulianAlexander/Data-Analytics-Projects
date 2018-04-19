@@ -2,6 +2,11 @@
 
 This repository contains all of the various projects I have and will undertake in my pursuit of becoming a Data Analyst. My projects, in order of most recent to least recent, are as follows:
 
+# Machine Learning Projects:
+
+## Decision Trees and Random Forests
+
+
 ## Belly Button Biodiversity Web App
 Using Python, SQLAlchemy, JavaScript, and Flask, I've built an interactive web app which explores the Belly Button Biodiversity Dataset: http://robdunnlab.com/projects/belly-button-biodiversity/
 
