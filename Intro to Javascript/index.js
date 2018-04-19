@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var $tbody = document.querySelector('tbody');
 var $stateInput = document.querySelector('#state');
 var $searchBtn = document.querySelector('#search');
@@ -63,6 +62,4 @@ function handleSearchButtonClick() {
   renderTable(); 
 }
 
-
->>>>>>> 47afba16ec9d7c80fc3a21e3e3f647f41ce2fceb
 renderTable();
