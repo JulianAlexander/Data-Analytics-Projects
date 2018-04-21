@@ -15,6 +15,7 @@ The data set consists of 50 samples from each of three species of Iris (Iris set
 For this project I will be exploring publicly available data from LendingClub.com. Lending Club connects people who need money (borrowers) with people who have money (investors). I will try to create a model that will help predict people who have a high probability of paying back investments. 
 
 ## Logistic Regression
+In this project we will be working with a fake advertising data set, indicating whether or not a particular internet user clicked on an Advertisement. We will try to create a model that will predict whether or not they will click on an ad based off the features of that user.
 
 ## Linear Regression
 
