@@ -22,6 +22,9 @@ I just got some contract work with an Ecommerce company based in New York City t
 
 # General Projects
 
+## Gun Violence in America
+Using Python, SQL, and JavaScript, my group and I attempt to take a dive into the numbers behind shootings in the US using interactive maps and charts (the first three charts were coded by me: https://github.com/andsylk/GunViolence_Group_Project2)
+
 ## Belly Button Biodiversity Web App
 Using Python, SQLAlchemy, JavaScript, and Flask, I've built an interactive web app which explores the Belly Button Biodiversity Dataset: http://robdunnlab.com/projects/belly-button-biodiversity/
 
