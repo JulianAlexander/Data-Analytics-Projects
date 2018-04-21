@@ -1,1 +1,2 @@
-This project utlizes Leaflet.js and Earthquake data from the USGS to visualize Earthquake frequency across the world. 
+# Earthquake Mapping with Leaflet.js:
+The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. They collect a massive amount of data from all over the world each day, and this visualization attempts to convey their data in a meaningful way.
