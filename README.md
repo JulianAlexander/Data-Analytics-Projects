@@ -4,8 +4,21 @@ This repository contains all of the various projects I have and will undertake i
 
 # Machine Learning Projects:
 
-## Decision Trees and Random Forests
+## Support Vector Machines using the Iris Database:
+For this project, I will be using the famous [Iris flower data set](http://en.wikipedia.org/wiki/Iris_flower_data_set). 
 
+The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by Sir Ronald Fisher in the 1936 as an example of discriminant analysis. 
+
+The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor), so 150 total samples. Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters.
+
+## Decision Trees and Random Forests
+For this project I will be exploring publicly available data from LendingClub.com. Lending Club connects people who need money (borrowers) with people who have money (investors). I will try to create a model that will help predict people who have a high probability of paying back investments. 
+
+## Logistic Regression
+
+## Linear Regression
+
+# General Projects
 
 ## Belly Button Biodiversity Web App
 Using Python, SQLAlchemy, JavaScript, and Flask, I've built an interactive web app which explores the Belly Button Biodiversity Dataset: http://robdunnlab.com/projects/belly-button-biodiversity/
