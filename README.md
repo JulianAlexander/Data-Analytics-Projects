@@ -25,6 +25,9 @@ I just got some contract work with an Ecommerce company based in New York City t
 ## Gun Violence in America
 Using Python, SQL, and JavaScript, my group and I attempt to take a dive into the numbers behind shootings in the US using interactive maps and charts (the first three charts were coded by me: https://github.com/andsylk/GunViolence_Group_Project2)
 
+## Earthquake Mapping with Leaflet.js
+The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. They collect a massive amount of data from all over the world each day, and this visualization attempts to convey their data in a meaningful way.
+
 ## Interactive d3 Visualization
 Here, using data from the U.S. Census and the Behavioral Risk Factor Surveillance System, I code an interactive scatter plot showing correlations between mean income and health at the State Level and embed it into an i-frame.
 
