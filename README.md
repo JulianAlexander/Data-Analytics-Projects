@@ -25,6 +25,9 @@ I just got some contract work with an Ecommerce company based in New York City t
 ## Gun Violence in America
 Using Python, SQL, and JavaScript, my group and I attempt to take a dive into the numbers behind shootings in the US using interactive maps and charts (the first three charts were coded by me: https://github.com/andsylk/GunViolence_Group_Project2)
 
+## Interactive d3 Visualization
+Here, using data from the U.S. Census and the Behavioral Risk Factor Surveillance System, I code an interactive scatter plot showing correlations between mean income and health at the State Level and embed it into an i-frame.
+
 ## U.S. Job Data provided by the Census
 Here, my group and I use the Census API to visualize data regarding the US job market from 2006 - 2015: https://github.com/harryli99/BootCamp-Project1
 
